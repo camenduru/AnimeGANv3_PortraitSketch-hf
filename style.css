@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+img#overview {
+  max-width: 1000px;
+  max-height: 600px;
+  display: block;
+  margin: auto;
+}
+div#result {
+  max-width: 500px;
+  max-height: 500px;
+}
+img#visitor-badge {
+  display: block;
+  margin: auto;
+}
