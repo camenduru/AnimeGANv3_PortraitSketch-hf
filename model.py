@@ -46,9 +46,8 @@ class Model:
     @staticmethod
     def _load_model() -> ort.InferenceSession:
         path = huggingface_hub.hf_hub_download(
-            'hysts/AnimeGANv3',
-            'AnimeGANv3_PortraitSketch_25.onnx',
-            use_auth_token=os.environ['HF_TOKEN'])
+            'public-data/AnimeGANv3-portrait-sketch',
+            'AnimeGANv3_PortraitSketch_25.onnx')
         return ort.InferenceSession(
             path, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
 
